@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Upload_New_Product">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp">
+
+                    <ImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/highlight"
+                        android:src="@drawable/upload"
+                        android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:id="@+id/profile_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload"
+                    android:background="@drawable/highlight"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:id="@+id/profile_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload"
+                    android:background="@drawable/highlight"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:id="@+id/profile_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload"
+                    android:background="@drawable/highlight"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="Upload" />
+
+            </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Gender"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/Gender_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/Product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:text="Category"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/Product_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="0dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/Product_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:text="(Product)"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/Product_Name_Spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/productNameL1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/CityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Product Name"
+                    android:layout_toRightOf="@id/productNameL1"
+                    android:layout_marginStart="20dp"
+                    app:met_floatingLabel="normal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/BrandLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand               "
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/BrandLabelType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Brand Name"
+                    android:layout_toRightOf="@id/BrandLabel"
+                    android:layout_marginStart="20dp"
+                    app:met_floatingLabel="normal"/>
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ColourLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colour             "
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ColourType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Colour"
+                    android:layout_toRightOf="@id/ColourLabel"
+                    android:layout_marginStart="20dp"
+                    app:met_floatingLabel="normal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ProductLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Type "
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ProductType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Product Name"
+                    android:layout_toRightOf="@id/ProductLabel"
+                    android:layout_marginStart="20dp"
+                    app:met_floatingLabel="normal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ShopAddrsLabl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Address"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/ShopAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Address"
+                    android:layout_toRightOf="@id/ShopAddrsLabl"
+                    android:layout_marginStart="20dp"
+                    app:met_floatingLabel="normal"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"/>
+
+        </LinearLayout>
+
+
+        <!--
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Location"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentEnd="true"/>
+
+         <Button
+             android:id="@+id/Upload"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentStart="true"
+             android:text="Upload"/>
+
+             -->
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

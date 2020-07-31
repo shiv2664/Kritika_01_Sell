@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.shivam.kritika_01_sell.MainActivity">
+    
+    <LinearLayout
+        android:id="@+id/linear_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:id="@+id/img_button1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_baseline_person_24"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:id="@+id/img_button2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_baseline_camera_enhance_24" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fashion"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fashion" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fashion"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fashion" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/profileAccentColor"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fashion"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                app:cardElevation="5dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/fashion" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/profileAccentColor"
+            android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
