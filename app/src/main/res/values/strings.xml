@@ -28,12 +28,11 @@
         <item>Men</item>
         <item>Women</item>
         <item>Kids</item>
-        <item>Other</item>
     </string-array>
 
     <string-array name="ProductTypeMen">
-        <item>Shoes</item>
         <item>Clothing</item>
+        <item>Shoes</item>
         <item>Accessories</item>
     </string-array>
 
@@ -68,9 +67,9 @@
     </string-array>
 
     <string-array name="ProductTypeWomen">
-        <item>Shoes</item>
         <item>Clothing</item>
         <item>Indian and Fusion Wear</item>
+        <item>Shoes</item>
         <item>Accessories</item>
     </string-array>
 
@@ -126,7 +125,107 @@
         <item>Birkenstock</item>
     </string-array>
 
+    <string-array name="ProductTypeKids">
+        <item>Boys Clothing</item>
+        <item>Girls Clothing</item>
+        <item>Boys Footwear</item>
+        <item>Girls Footwear</item>
+        <item>Infants</item>
+        <item>Kids Accessories</item>
+    </string-array>
+
+    <string-array name="ProductTypeBoysClothing">
+        <item>T-Shirts</item>
+        <item>Shirts</item>
+        <item>Shorts</item>
+        <item>Jeans</item>
+        <item>Trousers</item>
+        <item>Clothing Sets</item>
+        <item>Ethnic Wear</item>
+        <item>Track Pants and Pyjamas</item>
+        <item>Jacket, Sweater and Sweatshirts</item>
+        <item>Innerwear and Sleepwear</item>
+    </string-array>
+
+    <string-array name="ProductTypeGirlsClothing">
+        <item>Dresses</item>
+        <item>Tops</item>
+        <item>Tshirts</item>
+        <item>Clothing Sets</item>
+        <item>Ethnic wear</item>
+        <item>Dungarees and Jumpsuits</item>
+        <item>Skirts and shorts</item>
+        <item>Tights and Leggings</item>
+        <item>Jeans, Trousers and Capris</item>
+        <item>Jacket, Sweater and Sweatshirts</item>
+        <item>Innerwear and Sleepwear</item>
+    </string-array>
+    
+    <string-array name="ProductTypeBoysFootwear">
+        <item>Casual Shoes</item>
+        <item>Sports Shoes</item>
+        <item>Sandals</item>
+        <item>Flip flops</item>
+        <item>School Shoes</item>
+    </string-array>
+
+    <string-array name="ProductTypeGirlsFootwear">
+        <item>Flats</item>
+        <item>Casual Shoes</item>
+        <item>Heels</item>
+        <item>Flip flops</item>
+        <item>Sandals</item>
+        <item>School Shoes</item>
+    </string-array>
+
+    <string-array name="ProductTypeInfants">
+        <item>Rompers and Onesies</item>
+        <item>Clothing Sets</item>
+        <item>Tshirts and Tops</item>
+        <item>Dresses</item>
+        <item>Bottom wear</item>
+        <item>Winter Wear</item>
+        <item>Innerwear and Sleepwear</item>
+        <item>Infants Accessories</item>
+    </string-array>
+    
+    <string-array name="ProductTypeKidsAccessories">
+        <item>Bags and Backpacks</item>
+        <item>Watches</item>
+        <item>Jewellery and Hair Accessories</item>
+        <item>Eyewear</item>
+    </string-array>
 
 
 
+
+
+
+    
+    
+    
+    
+    
+    
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+    
+    
+    
+    
 </resources>

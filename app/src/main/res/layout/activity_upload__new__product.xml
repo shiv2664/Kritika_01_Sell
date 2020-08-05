@@ -22,85 +22,141 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            <RelativeLayout
-                android:paddingStart="1dp"
-                android:paddingEnd="1dp"
-                android:layout_width="400dp"
-                android:layout_height="400dp">
-
-                    <ImageView
-                        android:id="@+id/profile_image"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/highlight"
-                        android:src="@drawable/upload"
-                        android:layout_centerInParent="true"/>
+                        app:contentPadding="10dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        app:cardBackgroundColor="#ffffff">
 
-            </RelativeLayout>
+                        <RelativeLayout
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp">
 
+                        <ImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/highlight"
+                            android:src="@drawable/upload"
+                            android:layout_centerInParent="true"/>
 
-            <RelativeLayout
-                android:paddingStart="1dp"
-                android:paddingEnd="1dp"
-                android:layout_width="400dp"
-                android:layout_height="400dp">
+                    </RelativeLayout>
 
-                <ImageView
-                    android:id="@+id/profile_image2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/upload"
-                    android:background="@drawable/highlight"
-                    android:layout_centerInParent="true"/>
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:paddingStart="1dp"
-                android:paddingEnd="1dp"
-                android:layout_width="400dp"
-                android:layout_height="400dp">
-
-                <ImageView
-                    android:id="@+id/profile_image3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/upload"
-                    android:background="@drawable/highlight"
-                    android:layout_centerInParent="true"
-                    android:contentDescription="TODO" />
-            </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
 
 
-            <RelativeLayout
-                android:paddingStart="1dp"
-                android:paddingEnd="1dp"
-                android:layout_width="400dp"
-                android:layout_height="400dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:contentPadding="10dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        app:cardBackgroundColor="#ffffff">
 
-                <ImageView
-                    android:id="@+id/profile_image4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/upload"
-                    android:background="@drawable/highlight"
-                    android:layout_centerInParent="true"
-                    android:contentDescription="Upload" />
+                        <RelativeLayout
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp">
 
-            </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/profile_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/upload"
+                            android:background="@drawable/highlight"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:contentPadding="10dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        app:cardBackgroundColor="#ffffff">
+
+                    <RelativeLayout
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp">
+
+                        <ImageView
+                            android:id="@+id/profile_image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/upload"
+                            android:background="@drawable/highlight"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="TODO" />
+                    </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:contentPadding="10dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        app:cardBackgroundColor="#ffffff">
+
+                    <RelativeLayout
+                        android:paddingStart="1dp"
+                        android:paddingEnd="1dp"
+                        android:layout_width="400dp"
+                        android:layout_height="400dp">
+
+                        <ImageView
+                            android:id="@+id/profile_image4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/upload"
+                            android:background="@drawable/highlight"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="Upload" />
+
+                    </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
             </HorizontalScrollView>
 
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
-
-            <RelativeLayout
+                <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
@@ -118,7 +174,7 @@
 
                 <Spinner
                     android:id="@+id/Gender_Spinner"
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_centerVertical="true"
@@ -126,6 +182,17 @@
                     android:layout_marginEnd="0dp"/>
 
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -145,7 +212,7 @@
 
                 <Spinner
                     android:id="@+id/Product_Spinner"
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_alignParentEnd="true"
@@ -154,13 +221,24 @@
 
             </RelativeLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/Product_Name"
+                    android:id="@+id/Product_Type_Label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -172,13 +250,24 @@
 
                 <Spinner
                     android:id="@+id/Product_Name_Spinner"
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"/>
 
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -196,16 +285,31 @@
                     android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/CityName"
+                    android:id="@+id/Product_Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/productNameL1"
                     android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true"
                     android:hint="Product Name"
-                    android:layout_toRightOf="@id/productNameL1"
-                    android:layout_marginStart="20dp"
                     app:met_floatingLabel="normal"/>
 
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -216,25 +320,79 @@
                     android:id="@+id/BrandLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Brand               "
+                    android:text="Brand"
                     android:textSize="20sp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/BrandLabelType"
+                    android:id="@+id/Brand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
                     android:hint="Brand Name"
-                    android:layout_toRightOf="@id/BrandLabel"
-                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/BrandLabel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true"
                     app:met_floatingLabel="normal"/>
             </RelativeLayout>
 
+            </androidx.cardview.widget.CardView>
 
 
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/Size_Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size                  "
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/Size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Separate each size with comma(,)"
+                    android:layout_toEndOf="@id/Size_Label"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true"
+                    app:met_floatingLabel="none"/>
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -245,22 +403,36 @@
                     android:id="@+id/ColourLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Colour             "
+                    android:text="Colour              "
                     android:textSize="20sp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/ColourType"
+                    android:id="@+id/Colour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
                     android:hint="Colour"
-                    android:layout_toRightOf="@id/ColourLabel"
-                    android:layout_marginStart="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true"
                     app:met_floatingLabel="normal"/>
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -268,25 +440,41 @@
                 android:layout_marginTop="20dp">
 
                 <TextView
-                    android:id="@+id/ProductLabel"
+                    android:id="@+id/PrizeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Product Type "
+                    android:text="Prize"
                     android:textSize="20sp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
-                    android:id="@+id/ProductType"
+                    android:id="@+id/Prize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:hint="₹Prize"
+                    android:inputType="number"
+                    android:layout_toRightOf="@id/PrizeLabel"
                     android:layout_alignParentEnd="true"
-                    android:hint="Product Name"
-                    android:layout_toRightOf="@id/ProductLabel"
-                    android:layout_marginStart="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true"
                     app:met_floatingLabel="normal"/>
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -297,7 +485,7 @@
                     android:id="@+id/ShopAddrsLabl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shop Address"
+                    android:text="Shop Address "
                     android:textSize="20sp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
@@ -307,41 +495,126 @@
                     android:id="@+id/ShopAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:hint="Address"
+                    android:hint="Address(Auto-Detect)"
                     android:layout_toRightOf="@id/ShopAddrsLabl"
-                    android:layout_marginStart="20dp"
-                    app:met_floatingLabel="normal"/>
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true"/>
             </RelativeLayout>
 
-            <Button
-                android:id="@+id/location"
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location"/>
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/locationLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location(Shop)"
+                        android:textSize="20sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Lat,Long(Auto)"
+                        android:layout_toEndOf="@id/locationLabel"
+                        android:maxLines="1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="150dp"
+                        android:layout_centerVertical="true"
+                        app:met_floatingLabel="none"/>
+                </RelativeLayout>
+
+                <!--
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+
+                -->
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/CityNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City Name"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/CityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="City(Auto-Detect)"
+                    android:layout_toRightOf="@id/CityNameLabel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
-
-        <!--
-         <Button
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="Location"
-             android:layout_alignParentBottom="true"
-             android:layout_alignParentEnd="true"/>
-
-         <Button
-             android:id="@+id/Upload"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentBottom="true"
-             android:layout_alignParentStart="true"
-             android:text="Upload"/>
-
-             -->
-
     </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_icon="@drawable/ic_baseline_navigate_next_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>
