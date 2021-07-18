@@ -33,7 +33,6 @@ public class RegisterActivity extends AppCompatActivity {
     public static final int SIGN_IN_REQUEST_CODE = 1001;
     public static final String TAG = "MyTag";
     private GoogleSignInClient mGoogleSignInClient;
-    private Button mBtnSignOut;
     private SignInButton mBtnGoogleSignIn;
     private FirebaseAuth mAuth;
 
@@ -44,7 +43,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        mBtnSignOut = findViewById(R.id.btn_signout);
         mBtnGoogleSignIn= findViewById(R.id.signInButton);
 
         fragmentManager = getSupportFragmentManager();
@@ -84,31 +82,10 @@ public class RegisterActivity extends AppCompatActivity {
         updateUI(mAuth.getCurrentUser());
 
         mBtnGoogleSignIn.setOnClickListener(this::signIn);
-        mBtnSignOut.setOnClickListener(this::signOut);
 
     }
 
 
-    private void signOut(View view) {
-
-//        mGoogleSignInClient.revokeAccess()
-//                .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<Void> task) {
-//                        if(task.isSuccessful()) {
-//                            Toast.makeText(MainActivity.this, "User logged out", Toast.LENGTH_SHORT).show();
-//                            updateUI(GoogleSignIn.getLastSignedInAccount(MainActivity.this));
-//
-//                        }else{
-//                            Toast.makeText(MainActivity.this, "some error", Toast.LENGTH_SHORT).show();
-//                        }
-//                    }
-//                });
-
-        mAuth.signOut();
-        updateUI(mAuth.getCurrentUser());
-
-    }
 
     private void signIn(View view) {
 
@@ -120,14 +97,13 @@ public class RegisterActivity extends AppCompatActivity {
     private void updateUI(FirebaseUser firebaseUser) {
 
         if (firebaseUser != null) {
-            mBtnSignOut.setVisibility(View.VISIBLE);
             //mOutputText.setText(firebaseUser.getDisplayName() + "\n" +
             //firebaseUser.getEmail();
             mBtnGoogleSignIn.setVisibility(View.GONE);
             Intent intent=new Intent(RegisterActivity.this,MainActivity.class);
             startActivity(intent);
+            finish();
         }else{
-            mBtnSignOut.setVisibility(View.GONE);
             //mOutputText.setText("User is not logged in");
             mBtnGoogleSignIn.setVisibility(View.VISIBLE);
         }

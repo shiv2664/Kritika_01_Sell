@@ -4,18 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".Upload_New_Product">
+    tools:context=".Upload_New_Product"
+    android:background="#e6e6e6">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar_layout">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_centerHorizontal="true">
+            android:layout_centerHorizontal="true"
+            android:padding="10dp">
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -31,6 +50,7 @@
                         android:layout_height="wrap_content"
                         app:contentPadding="10dp"
                         app:cardCornerRadius="20dp"
+                        android:elevation="5dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="2dp"
@@ -40,16 +60,19 @@
                         <RelativeLayout
                         android:paddingStart="1dp"
                         android:paddingEnd="1dp"
-                        android:layout_width="400dp"
-                        android:layout_height="400dp">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:id="@+id/profile_image"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/highlight"
+                            android:layout_width="400dp"
+                            android:layout_height="500dp"
                             android:src="@drawable/upload"
-                            android:layout_centerInParent="true"/>
+                            android:background="@drawable/highlight"
+                            android:layout_centerInParent="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"/>
 
                     </RelativeLayout>
 
@@ -71,7 +94,7 @@
                         android:paddingStart="1dp"
                         android:paddingEnd="1dp"
                         android:layout_width="400dp"
-                        android:layout_height="400dp">
+                        android:layout_height="500dp">
 
                         <ImageView
                             android:id="@+id/profile_image2"
@@ -79,7 +102,10 @@
                             android:layout_height="match_parent"
                             android:src="@drawable/upload"
                             android:background="@drawable/highlight"
-                            android:layout_centerInParent="true"/>
+                            android:layout_centerInParent="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"/>
                     </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -99,7 +125,7 @@
                         android:paddingStart="1dp"
                         android:paddingEnd="1dp"
                         android:layout_width="400dp"
-                        android:layout_height="400dp">
+                        android:layout_height="500dp">
 
                         <ImageView
                             android:id="@+id/profile_image3"
@@ -108,7 +134,9 @@
                             android:src="@drawable/upload"
                             android:background="@drawable/highlight"
                             android:layout_centerInParent="true"
-                            android:contentDescription="TODO" />
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"/>
                     </RelativeLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -128,7 +156,7 @@
                         android:paddingStart="1dp"
                         android:paddingEnd="1dp"
                         android:layout_width="400dp"
-                        android:layout_height="400dp">
+                        android:layout_height="500dp">
 
                         <ImageView
                             android:id="@+id/profile_image4"
@@ -137,7 +165,9 @@
                             android:src="@drawable/upload"
                             android:background="@drawable/highlight"
                             android:layout_centerInParent="true"
-                            android:contentDescription="Upload" />
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"/>
 
                     </RelativeLayout>
                     </androidx.cardview.widget.CardView>
@@ -261,6 +291,131 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/CLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Colours" />
+
+
+                    <!--
+                    <ImageView
+                        android:id="@+id/ColourChooser"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/ic_baseline_navigate_next_24"
+                        android:layout_alignParentEnd="true"/>
+                        -->
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/CLabel"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ColourCard1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@color/greyBackground"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ColourCard2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@color/greyBackground"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:visibility="gone"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ColourCard3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@color/greyBackground"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:visibility="gone"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ColourCard4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@color/greyBackground"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:visibility="gone"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ColourCard5"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@color/greyBackground"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:visibility="gone"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ColourCard6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardBackgroundColor="@color/greyBackground"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+
+                   <!--
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/Colour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:inputType="text"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelText="Colours"
+                        app:met_floatingLabelAlwaysShown="true"/>
+                        -->
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:contentPadding="10dp"
@@ -273,28 +428,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
-
-                <TextView
-                    android:id="@+id/productNameL1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Product Name"
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/Product_Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/productNameL1"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="100"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
                     android:layout_centerVertical="true"
-                    android:hint="Product Name"
-                    app:met_floatingLabel="normal"/>
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="Product Name"
+                    app:met_floatingLabelAlwaysShown="true"/>
 
             </RelativeLayout>
 
@@ -315,28 +462,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
-
-                <TextView
-                    android:id="@+id/BrandLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Brand"
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/Brand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Brand Name"
-                    android:layout_toEndOf="@id/BrandLabel"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="30"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
                     android:layout_centerVertical="true"
-                    app:met_floatingLabel="normal"/>
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="Brand Name"
+                    app:met_floatingLabelAlwaysShown="true"/>
+
             </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -358,33 +498,28 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
-                <TextView
-                    android:id="@+id/Size_Label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Size                  "
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/Size"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Separate each size with comma(,)"
-                    android:layout_toEndOf="@id/Size_Label"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="30"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
                     android:layout_centerVertical="true"
-                    app:met_floatingLabel="none"/>
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="Size(Separate each size with comma(,))"
+                    app:met_floatingLabelAlwaysShown="true"/>
+
             </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
 
 
+          <!--
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -394,34 +529,61 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp">
 
+
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
-
-                <TextView
-                    android:id="@+id/ColourLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Colour              "
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/Colour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Colour"
                     android:layout_alignParentEnd="true"
+                    android:inputType="text"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
                     android:layout_centerVertical="true"
-                    app:met_floatingLabel="normal"/>
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="Colours"
+                    app:met_floatingLabelAlwaysShown="true"/>
             </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
+            -->
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/PdDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:maxLength="1000"
+                        android:layout_centerVertical="true"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelText="Product Description(Optional)"
+                        app:met_floatingLabelAlwaysShown="true"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
 
 
 
@@ -439,29 +601,55 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
-                <TextView
-                    android:id="@+id/PrizeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Prize"
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/Prize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="₹Prize"
                     android:inputType="number"
-                    android:layout_toRightOf="@id/PrizeLabel"
+                    android:maxLines="1"
+                    android:maxLength="7"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
                     android:layout_centerVertical="true"
-                    app:met_floatingLabel="normal"/>
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="₹Prize"
+                    app:met_floatingLabelAlwaysShown="true"/>
+
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/ShopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:maxLength="50"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelText="Shop Name"
+                        app:met_floatingLabelAlwaysShown="true"/>
+                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -481,26 +669,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
-                <TextView
-                    android:id="@+id/ShopAddrsLabl"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Shop Address "
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
 
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/ShopAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Address(Auto-Detect)"
-                    android:layout_toRightOf="@id/ShopAddrsLabl"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="40"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="Address(Auto-Detect)"
+                    app:met_floatingLabelAlwaysShown="true"/>
             </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -521,28 +703,32 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp">
 
-                    <TextView
-                        android:id="@+id/locationLabel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Location(Shop)"
-                        android:textSize="20sp"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerVertical="true"
-                        android:textStyle="bold"/>
 
                     <com.rengwuxian.materialedittext.MaterialEditText
                         android:id="@+id/Location"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="Lat,Long(Auto)"
-                        android:layout_toEndOf="@id/locationLabel"
                         android:maxLines="1"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="150dp"
                         android:layout_centerVertical="true"
-                        app:met_floatingLabel="none"/>
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:met_floatingLabel="normal"
+                        app:met_floatingLabelText="Shop Location(Lat,Long(Auto))"
+                        app:met_floatingLabelAlwaysShown="true"/>
+
+                    <TextView
+                        android:id="@+id/ShopLocationMAP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Location"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="1dp"
+                        android:text="See Shop's Location"/>
                 </RelativeLayout>
 
                 <!--
@@ -571,26 +757,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp">
 
-                <TextView
-                    android:id="@+id/CityNameLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="City Name"
-                    android:textSize="20sp"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"/>
-
                 <com.rengwuxian.materialedittext.MaterialEditText
                     android:id="@+id/CityName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="City(Auto-Detect)"
-                    android:layout_toRightOf="@id/CityNameLabel"
+                    android:inputType="text"
                     android:layout_alignParentEnd="true"
+                    android:maxLength="40"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="150dp"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    app:met_floatingLabel="normal"
+                    app:met_floatingLabelText="City(Auto-Detect)"
+                    app:met_floatingLabelAlwaysShown="true"/>
             </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -612,6 +790,7 @@
         android:id="@+id/saveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorPrimary"
         app:fab_icon="@drawable/ic_baseline_navigate_next_24"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"/>
